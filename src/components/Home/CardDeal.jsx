@@ -1,6 +1,6 @@
-import { card } from "../assets";
-import styles, { layout } from "../style";
-import Button from "./Button";
+import { card } from "../../assets/index.js";
+import styles, { layout } from "../../style.js";
+import Button from "../Button.jsx";
 
 const CardDeal = () =>(
     <section className={layout.section}>
@@ -14,7 +14,7 @@ const CardDeal = () =>(
                 aliquet eget mauris tortor.ç Aliquet ultrices ac, ametau.
             </p>
 
-            <Button styles={`mt-10`} />
+            <Button to="login" title='Get Started' styles={`py-4 px-6 font-poppins font-medium text-[18px] text-primary bg-blue-gradient rounded-[10px] outline-none mt-10`} />
         </div>
 
         <div className={layout.sectionImg}>
