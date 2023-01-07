@@ -1,6 +1,6 @@
-import { features } from "../constants";
-import styles, { layout } from "../style";
-import Button from "./Button";
+import { features } from "../../constants/index.js";
+import styles, { layout } from "../../style.js";
+import Button from "../Button.jsx";
 
 const FeatureCard = ({ icon, title, content, index }) => (
     <div className={`flex flex-row p-6 rounded-[20px] ${index !== features.length - 1 ? "mb-6" : "mb-0"} feature-card`}>
@@ -30,7 +30,7 @@ const Business = () => (
                 of credit cards on the market.
             </p>
 
-            <Button styles={`mt-10`} />
+            <Button to="login" title='Get Started' styles={`py-4 px-6 font-poppins font-medium text-[18px] text-primary bg-blue-gradient rounded-[10px] outline-none mt-10`} />
         </div>
 
         <div className={`${layout.sectionImg} flex-col`}>

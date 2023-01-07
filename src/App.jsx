@@ -1,32 +1,23 @@
-import styles from "./style";
-import { Billing, Business, CardDeal, Clients, CTA, Footer, Navbar, Stats, Testimonials, Hero } from "./components";
+// import styles from "./style";
+
+import {
+    BrowserRouter,
+    Routes,
+    Route,
+} from "react-router-dom";
+
+import {HomePage, LoginPage, SignupPage, ProfilePage} from './pages';
 
 const App = () => (
-    <div className="bg-primary w-full overflow-hidden">
-        <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-            <div className={`${styles.boxWidth}`}>
-                <Navbar />
-            </div>
-        </div>
-
-        <div className={`bg-primary ${styles.flexStart}`}>
-            <div className={`${styles.boxWidth}`}>
-                <Hero />
-            </div>
-        </div>
-
-        <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
-            <div className={`${styles.boxWidth}`}>
-                <Stats />
-                <Business />
-                <Billing />
-                <CardDeal />
-                <Testimonials />
-                <Clients />
-                <CTA />
-                <Footer />
-            </div>
-        </div>
+    <div>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/profile" element={<ProfilePage />} />
+                <Route path="/login" element={<LoginPage />} />
+                <Route path="/signup" element={<SignupPage />} />
+            </Routes>
+        </BrowserRouter>
     </div>
 );
 
