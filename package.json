@@ -2,7 +2,7 @@
   "name": "modern_bank",
   "version": "0.0.0",
   "scripts": {
-    "test": "jest --watchAll",
+    "test": "jest",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
