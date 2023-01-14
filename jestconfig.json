@@ -1,0 +1,6 @@
+{
+  "collectCoverage": true,
+  "coverageReports": ["lcov"],
+  "coverageDirector": "./output/code-coverage/",
+  "testTimeout": 100
+}

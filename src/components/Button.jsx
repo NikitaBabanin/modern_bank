@@ -1,9 +1,9 @@
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-const Button = ({styles, title, to}) => (
-    <Link to={to} type="button" className={styles}>
-        {title}
-    </Link>
+const Button = ({ styles, title, to }) => (
+  <Link to={to} type="button" className={styles}>
+    {title}
+  </Link>
 );
 
-export default Button
+export default Button;
